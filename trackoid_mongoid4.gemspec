@@ -17,8 +17,8 @@ Gem::Specification.new do |s|
   s.files = `git ls-files`.split("\n")
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.add_runtime_dependency 'mongoid', '~> 5.0'
+  s.add_runtime_dependency 'mongoid', '~> 6.1.0'
   s.add_development_dependency 'rake', '~> 0'
-  s.add_development_dependency 'rspec','~> 3.0'
+  s.add_development_dependency 'rspec','~> 3.3'
   s.add_development_dependency 'mocha', '~> 0'
 end
